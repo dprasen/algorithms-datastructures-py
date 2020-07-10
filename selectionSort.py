@@ -1,9 +1,9 @@
 def selectionSort(arr):
-    n = len(arr)
-    for i in range(n-1):
-        min_index = i
-        for j in range(i+1, n-1):
-            if (arr[j] < arr[min_index]) : 
-                min_index = j
-                arr[i],arr[min_index] = arr[min_index],arr[i]
+    arrayLength = len(arr)
+    for outerIndex in range(arrayLength-1):
+        min_index = outerIndex
+        for innerIndex in range(outerIndex+1, arrayLength-1):
+            if (arr[innerIndex] < arr[min_index]) : 
+                min_index = innerIndex
+                arr[outerIndex],arr[min_index] = arr[min_index],arr[outerIndex]
     return arr

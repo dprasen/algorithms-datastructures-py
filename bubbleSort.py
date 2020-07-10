@@ -1,9 +1,9 @@
 def bubbleSort(arr):
-    n = len(arr)
+    arrayLength = len(arr)
 
     #traversing through entire array
-    for i in range(1,n):        
-        for j in range(0,n-1):
-            if( arr[j] < arr[j-1]):
-                arr[j+1],arr[j] = arr[j],arr[j+1]
+    for i in range(1,arrayLength):        
+        for index in range(0,arrayLength-1):
+            if( arr[index] < arr[index-1]):
+                arr[index+1],arr[index] = arr[jindex,arr[index+1]
     return arr                
